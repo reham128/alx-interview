@@ -5,6 +5,7 @@ representing the Pascal’s triangle of n
 
 
 def pascal_triangle(n):
+    """to generate Pascal's triangle up to the nth row"""
     if n <= 0:
         return []
 
