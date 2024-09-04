@@ -4,9 +4,9 @@ const request = require('request');
 
 /**
  * Fetches character names from the Star Wars API for a given movie ID.
- * 
+ *
  * Usage: ./0-starwars_characters.js <Movie ID>
- * 
+ *
  * @module StarWarsCharacters
  */
 
@@ -30,10 +30,10 @@ const movieUrl = `https://swapi-api.hbtn.io/api/films/${movieId}/`;
 
 /**
  * Retrieves character names for the specified movie ID.
- * 
+ *
  * @param {string} movieUrl - The URL to fetch movie details including character URLs.
  */
-function fetchCharacterNames(movieUrl) {
+function fetchCharacterNames (movieUrl) {
   request(movieUrl, { json: true }, (err, res, body) => {
     // Handle request errors and non-200 response codes
     if (err || res.statusCode !== 200) {
